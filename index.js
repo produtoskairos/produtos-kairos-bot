@@ -220,9 +220,6 @@ module.exports = (LorranX) => {
       const isOwner = owner.includes(sender);
       const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
       const isGroupAdmins = groupAdmins.includes(sender) || false
-      const isLevelingOn = isGroup ? _leveling.includes(from) : false
-      const isRegister = checkRegisteredUser(sender)
-      const isMuted = isGroup ? mute.includes(from) : false
       const conts = mek.key.fromMe ? LorranX.user.jid : LorranX.contacts[sender] || { notify: jid.replace(/@.+/, '') }
       const pushname = mek.key.fromMe ? LorranX.user.name : conts.notify || conts.vname || conts.name || '-'
       const more = String.fromCharCode(8206)
