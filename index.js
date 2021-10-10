@@ -421,12 +421,6 @@ const sendButImage = async(from, text1, desc1, gam1, but = [], options = {}) => 
                  }
         return reply(ff1)}  
 
-        //SILENCIAR BOT EM GRUPOS
-
-        if (isMuted){
-          if (!isGroupAdmins) return
-}
-
         //COMANDOS DE LISTA
         if (listbut == 'Salgados' || command == `${prefix}start`) {
           var menusalgados = `
