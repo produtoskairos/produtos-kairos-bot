@@ -217,7 +217,6 @@ module.exports = (LorranX) => {
       const groupDesc = isGroup ? groupMetadata.desc : ''
       const groupOwner = isGroup ? groupMetadata.owner : ''
       const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-      const isBanned = ban.includes(sender)
       const isOwner = owner.includes(sender);
       const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
       const isGroupAdmins = groupAdmins.includes(sender) || false
@@ -524,8 +523,6 @@ sendButImage(from, Menuvideo, `@LorranX`, menuimg,[{
 
 ║│↭_*   [ *${prefix}block* ] 
 ║│↭_*   [ *${prefix}unblock* ]
-║│↭_*   [ *${prefix}ban* ] 
-║│↭_*   [ *${prefix}unban* ]
 ║│↭_*   [ *${prefix}creatgroup* ] 
 ║│↭_*   [ *${prefix}join* ] 
 ║│↭_*   [ *${prefix}setpp* ] 
