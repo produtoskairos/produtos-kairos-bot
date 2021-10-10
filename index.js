@@ -712,7 +712,9 @@ break;
         case 'menu':
           var menulist = LorranX.prepareMessageFromContent(from, {
             "listMessage" :{
-              "title": `${HORARIOS} ${pushname}\n\nSou o assistente de atendimento da Produtos Kairós, em que posso te ajudar?`,
+              "title": `${HORARIOS} ${pushname}
+              
+Sou o assistente de atendimento da Produtos Kairós, em que posso te ajudar?`,
               "description": ` `,
               "buttonText": "Opções",
               "listType": "SINGLE_SELECT",
@@ -739,7 +741,7 @@ break;
           break;
         //END MENUS   
         case '1':
-         LorranX.sendMessage(from, RESPOSTAS.preçoss, text, {quoted: verificadostts})
+         LorranX.sendMessage(from, RESPOSTAS.preçoss(), text, {quoted: verificadostts},)
          break
         case 'figu':
         case 'figurinha':
